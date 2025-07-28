@@ -29,3 +29,17 @@ test("La funzione average calcola la media aritmetica di un array di numeri.", (
     const result = average([6, 4])
     expect(result).toBe(5)
 })
+
+// 🏆 Snack 4
+// Creare un test che verifichi la seguente descrizione:
+// 👉 "La funzione createSlugA sostituisce gli spazi con -."
+// 📌 Esempi:
+// createSlug("Questo è un test") →  
+
+const { createSlugA } = require("./snack.js");
+
+test("La funzione createSlugA sostituisce gli spazi con -.", () => {
+    const result = createSlugA("Questo è un test")
+    expect(result).toBe("Questo-è-un-test")
+})
+

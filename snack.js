@@ -14,6 +14,10 @@ function average(numbers) {
     return sum / numbers.length;
 }
 
+function createSlugA(stringa) {
+    return stringa.replace(/\s+/g, "-")
+}
+
 
 
 
@@ -27,5 +31,6 @@ function average(numbers) {
 module.exports = {
     getInitials,
     createSlug,
-    average
+    average,
+    createSlugA,
 };
