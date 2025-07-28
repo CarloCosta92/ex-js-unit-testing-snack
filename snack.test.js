@@ -43,3 +43,15 @@ test("La funzione createSlugA sostituisce gli spazi con -.", () => {
     expect(result).toBe("Questo-è-un-test")
 })
 
+
+// 🏆 Snack 5
+// Creare un test che verifichi la seguente descrizione:
+// 👉 "La funzione isPalindrome verifica se una stringa è un palindromo."
+
+const { isPalindrome } = require("./snack.js");
+
+test("La funzione isPalindrome verifica se una stringa è un palindromo.", () => {
+    expect(isPalindrome("anna")).toBe(true);
+    expect(isPalindrome("ciao")).toBe(false);
+
+});

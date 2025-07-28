@@ -18,6 +18,10 @@ function createSlugA(stringa) {
     return stringa.replace(/\s+/g, "-")
 }
 
+function isPalindrome(str) {
+    return str === str.split("").reverse().join("");
+}
+
 
 
 
@@ -33,4 +37,5 @@ module.exports = {
     createSlug,
     average,
     createSlugA,
+    isPalindrome,
 };
