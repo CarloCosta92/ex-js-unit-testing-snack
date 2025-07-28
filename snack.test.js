@@ -67,3 +67,22 @@ test("La funzione createSlug lancia un errore se il titolo è vuoto o non valido
     expect(() => createSlugB("")).toThrow();
     expect(() => createSlugB("   ")).toThrow();
 })
+
+// 🏆 Snack 7
+// Crea un array di oggetti posts, in cui ogni oggetto ha le proprietà id, title e slug.
+// Creare un test che verifichi le seguenti descrizioni:
+// 👉 "La funzione findPostById restituisce il post corretto dato l’array di post e l’id"
+
+const posts = [
+    { id: 1, title: "Primo post", slug: "primo-post" },
+    { id: 2, title: "Secondo post", slug: "secondo-post" },
+    { id: 3, title: "Terzo post", slug: "terzo-post" },
+];
+
+const { findPostById } = require("./snack.js");
+
+
+test("La funzione findPostById restituisce il post corretto dato l’array di post e l’id", () => {
+    const result = findPostById(posts, 2);
+    expect(result).toEqual({ id: 2, title: "Secondo post", slug: "secondo-post" });
+});

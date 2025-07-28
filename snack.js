@@ -29,6 +29,11 @@ function createSlugB(title) {
     return title
 }
 
+function findPostById(posts, id) {
+    return posts.find(post => post.id === id);
+}
+
+
 
 
 
@@ -45,5 +50,7 @@ module.exports = {
     average,
     createSlugA,
     isPalindrome,
-    createSlugB
+    createSlugB,
+    findPostById,
+
 };
