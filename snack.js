@@ -5,6 +5,10 @@ function getInitials(fullName) {
         .join("");
 }
 
+function createSlug(str) {
+    return str.toLowerCase();
+}
+
 
 
 
@@ -16,5 +20,6 @@ function getInitials(fullName) {
 
 
 module.exports = {
-    getInitials
+    getInitials,
+    createSlug
 };
