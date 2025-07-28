@@ -22,6 +22,13 @@ function isPalindrome(str) {
     return str === str.split("").reverse().join("");
 }
 
+function createSlugB(title) {
+    if (!title || title.trim() === "") {
+        throw new Error("Titolo non valido");
+    }
+    return title
+}
+
 
 
 
@@ -38,4 +45,5 @@ module.exports = {
     average,
     createSlugA,
     isPalindrome,
+    createSlugB
 };

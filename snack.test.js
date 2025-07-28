@@ -55,3 +55,15 @@ test("La funzione isPalindrome verifica se una stringa è un palindromo.", () =>
     expect(isPalindrome("ciao")).toBe(false);
 
 });
+
+
+// 🏆 Snack 6
+// Creare un test che verifichi la seguente descrizione:
+// 👉 "La funzione createSlugB lancia un errore se il titolo è vuoto o non valido."
+
+const { createSlugB } = require("./snack.js");
+
+test("La funzione createSlug lancia un errore se il titolo è vuoto o non valido.", () => {
+    expect(() => createSlugB("")).toThrow();
+    expect(() => createSlugB("   ")).toThrow();
+})
